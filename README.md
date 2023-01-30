@@ -1,2 +1,2 @@
 # PROJETO MICROBLOG
-#### Projeto de microblog feito utilizando o (micro)framework Python Flask
+#### Projeto de microblog utilizando o (micro)framework Python Flask
