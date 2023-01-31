@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="simpl_block" style="margin: 100px 400px 100px 400px; text-align: center;">
+    {% if description %}
+    <p>{{ description }}</p>
+    {% else %}
+    <p> <b>!!! SEM DESCRIÇÃO !!!</b> </p>
+    {% endif %}
+</div>
+
+{% endblock %}

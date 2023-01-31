@@ -7,13 +7,38 @@
         {% else %}
         <title>Welcome to Microblog</title>
         {% endif %}
+
+        <style>
+            .simpl_block {
+                background-color: rgb(180, 120, 236);
+                border-radius: 5px;
+                border-width: 2px;
+                border: solid;
+                margin: 10px 900px 5px 20px;
+                padding: 5px;
+                text-align: justify;
+            }
+        </style>
     </head>
 
-    <body>
+    <body style="background-color: rgb(191, 186, 196)">
         <b>
-            <div>Microblog: <a href="/index">Home</a></div>
+            <div>Microblog: <a href="{{ url_for('index') }}">Home</a> |
+                <a href="{{ url_for('login') }}">Login</a> |
+                <a href="{{ url_for('contato') }}">Contato</a> |
+                <a href="{{ url_for('about') }}">Sobre</a>
+            </div>
         </b>
         <hr>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
         {% block content %}{% endblock %}
     </body>
 

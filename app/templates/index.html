@@ -3,12 +3,13 @@
 {% block content %}
 
 <h1>Hello, {{user.username}}!</h1>
-{% for p in posts %}
-<div>
-    <p>{{ p.author }}: <b>{{ p.text }}</b><br>
-        <span style="font-size: x-small;">{{ p.date }}</span>
-    </p>
+<div class="simpl_block">
+    {% for p in posts %}
+    <div>
+        <p>{{ p.author }}: <b>{{ p.text }}</b><br>
+            <span style="font-size: x-small;">{{ p.date }}</span>
+        </p>
+    </div>
+    {% endfor %}
 </div>
-{% endfor %}
-
 {% endblock %}
