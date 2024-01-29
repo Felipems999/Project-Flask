@@ -4,7 +4,7 @@
 
 ## Executanto o projeto
 
-### 1. Istalando o interpretador Python e o gerenciador de pacotes 'pip'
+### 1. Instalando o interpretador Python e o gerenciador de pacotes 'pip'
 Para executar o programa, primerio você precisa ter um interpretador Python instalado em seu computador, além do grenciador de pacotes 'pip'.
 Primeiro, instale o python 3 em seu computador. Para isso, acesse o site oficial do python e baixe a versão mais recente do interpretador. Ou, se preferir, use o comando, caso esteja usando o linux ubuntu:
 
